@@ -1,0 +1,57 @@
+.contact {
+
+  background-image: url('../assets/uklad-widoku-z-gory-z-pudelkami-na-pizze-i-notebookiem-min.jpg'); /*Obraz autorstwa Freepik*/
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  color:#B87D4B;
+
+  h1 {
+    font-size: 10rem;
+    text-align: center;
+    @media screen and (max-width: 505px) {
+      font-size: 6rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .map__container {
+      margin: 10% 5% 5% 5%;
+      .map__text {
+font-size: 3.7rem;
+        text-align: center;
+      }
+      .map__img {
+        @media screen and (max-width: 1024px) {
+          width:375px;}
+//@media screen and (max-width: 700px) {
+//  width:350px;
+//}
+        @media screen and (max-width: 700px) {
+          width:300px;
+          height:200px;
+        }
+      }
+    }
+
+    .form__container {
+      color: black;
+      margin: 20% 5% 10% 5%;
+      @media screen and (max-width: 700px) {
+        margin:0;
+      }
+      width: 200px;
+      .form__text {
+        font-size:2rem;
+        margin:0 0 2rem 0;
+      }
+    }
+  }
+}
+
+

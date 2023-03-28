@@ -1,0 +1,236 @@
+
+.home {
+  .header {
+    height: 5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    background: linear-gradient(to left, #1e130c, #9a8478);
+
+    &__container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100%;
+    }
+
+    .nav {
+      &__element {
+        //margin:0 1.5rem;
+      }
+
+      &__link {
+        color: white;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 2rem 1.28rem 1.21rem;
+        border-bottom: 4px solid transparent;
+        letter-spacing: 0.1875rem;
+
+//@media screen and (max-width: 1024px) {
+//  .nav__link {
+//    padding:0px;
+//  }
+//}
+
+
+        &:hover {
+          color:#B87D4B ;
+          border-color: black;
+
+        }
+      }
+    }
+
+    &__nav {
+      display: flex;
+    }
+  }
+}
+
+.banner {
+  flex-grow: 3;
+  background-image: url('../assets/widok-z-gory-pizza-z-czerwona-papryka-i-sosem-pomidorowym-z-miejsca-na-kopie.jpg'); /*Obraz autorstwa Freepik*/
+  background-size: cover ;
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
+  width:100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 5.35rem;
+  }
+  &__text {
+    font-family: 'Italiana', serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 10rem;
+
+    }
+  &__description {
+    font-family: 'Allura', cursive;
+    color:white;
+    font-size: 3rem;
+    margin-right: 3.57rem;
+  }
+  }
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 20px 190px 0 0;
+
+
+  &__text {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  &__img {
+    font-size: 5rem;
+  }
+}
+
+.phone {
+  font-size: 3rem;
+  color: white;
+  margin: 30px 150px 0 0;
+}
+
+.nav__toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.order__link {
+  color:white;
+  padding:0.5rem;
+  font-size: 2rem;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-right: 200px ;
+  background: linear-gradient(to right, #fe8c00, #f83600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media screen and (max-width: 1024px) {
+  .navi{
+
+    &__link {
+    padding:0;
+  }
+}
+}
+
+
+
+
+@media screen  and (max-width: 768px) {
+.home {
+
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to left, #1e130c, #9a8478);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+  .nav__link {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+
+  .banner {
+    background-image: url('../assets/widok-z-gory-pizza-z-czerwona-papryka-i-sosem-pomidorowym-z-miejsca-na-kopie_mobile.jpg') ; /*Obraz autorstwa Freepik*/;
+  }
+    .banner__container {
+      margin-right: 0;
+      align-items: center;
+    }
+
+    .banner__description {
+      margin-right: 0;
+      margin-top: 20px;
+    }
+
+    .clock {
+      margin-right: 0;
+    }
+
+    .phone {
+      margin: 30px;
+    }
+
+
+    .nav__toggle {
+      display: block;
+    }
+
+    .nav__toggle span {
+      display: block;
+      width: 30px;
+      height: 5px;
+      margin-bottom: 5px;
+      position: relative;
+      background: white;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+
+    .nav__toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .nav__toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav__toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .header__nav.active {
+      display: block;
+    }
+
+    .nav__element {
+      padding: 0;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .order__link {
+      margin: 0;
+    }
+  }
+
+@media screen  and (max-width: 475px) {
+  .clock {
+    margin:0;
+    &__text {
+      margin:0;
+    }
+  }
+  .phone {
+    margin:3px;
+  }
+}
+
+

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-decoration: none;
+  //color:white;
+}
+
+
+
+
+
+html {
+  background-color: white;
+  font-size: 14px;
+  min-height: 100vh;
+
+
+  @media screen and (max-width: 768px){
+    font-size: 10px;
+  }
+  @media screen and (max-width: 425px){
+    font-size : 8px
+  }
+}

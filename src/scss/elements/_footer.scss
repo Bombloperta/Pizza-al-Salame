@@ -1,0 +1,55 @@
+
+
+
+  .footer {
+    background: linear-gradient(to left, #1e130c, #9a8478);
+    color:white;
+
+  &__container{
+    height:5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.footer__address {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer__center {
+  text-align: center;
+}
+
+.footer__email {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.footer__right {
+  display: flex;
+}
+
+.footer__icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  color: white;
+}
+
+.footer__address {
+  font-size: 1.2rem;
+}
+
