@@ -2,15 +2,19 @@
 @import "bootstrap/scss/variables"; // zmienne bootstrap
 @import "bootstrap/scss/mixins";    // mixiny bootstrap
 @import '~bootstrap/scss/carousel'; // karuzela bootstrap
+@import 'animate.css';
 
 @import "./scss/generic/reset.scss";
+@import "./scss/settings/colors";
 @import "./scss/elements/base";
 @import "./scss/elements/home";
-@import "./scss/elements/aboutUs";
+@import "./scss/elements/aboutus";
 @import "./scss/elements/carousel";
+@import "./scss/elements/menu";
+@import "./scss/elements/gallery";
 @import "./scss/elements/contact";
 @import "./scss/elements/footer";
-@import "./scss/elements/gallery";
+
 
 
 

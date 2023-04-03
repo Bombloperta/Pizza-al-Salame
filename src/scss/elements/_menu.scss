@@ -1,0 +1,261 @@
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.pizza {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+
+  h3{
+    font-size:3rem
+  }
+  button {
+    background-color: $color-cheese;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius:20px;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #ff9800;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.modal__menu {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  animation-name: modal-open;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+
+}
+.modal-content p {
+  font-size:1.5rem;
+}
+.modal-content button {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #555;
+}
+
+.modal-content label {
+  font-size: 1.2rem;
+}
+
+.modal-content input[type="number"] {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0;
+}
+
+.toppings {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-size:14px;
+  &__total {
+    text-align: center;
+  }
+}
+
+
+
+.topping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 1px;
+}
+
+.topping button {
+  font-size: 0.8rem;
+  padding: 1px 2px;
+}
+
+.topping button.btnT {
+  background-color: red;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+.topping button.btnT:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cart-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.cart-modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cart-modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  max-height: 80%;
+  overflow: auto;
+  padding: 20px;
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+}
+
+.cart-modal-content h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.cart-modal-content table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.cart-modal-content table th,
+.cart-modal-content table td {
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cart-modal-content table thead th {
+  border-bottom: 2px solid #333;
+  font-size: 1.2rem;
+}
+
+.cart-modal-content table tbody td {
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-modal-content table td:last-child {
+  font-weight: bold;
+}
+
+.cart-modal-content button {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.cart-modal-content button:hover {
+  background-color: #555;
+}
+
+.cart-icon {
+  position: fixed;
+  top:0.3rem;
+  left:1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.cart-icon:hover {
+  background-color: #f2f2f2;
+}
+
+.cart-icon svg {
+  height: 100%;
+  width: 100%;
+}
+
+.order-confirmation {
+  text-align: center;
+  font-size: 3rem;
+  color:red;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .pizza-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  .pizzas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.topping {
+  //font-size:0.5rem;
+}

@@ -1,0 +1,243 @@
+{
+  "pizzas": [
+    {
+      "img": "./images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Margherita",
+      "description": "sos pomidorowy, ser mozzarella",
+      "price": 21.90,
+      "id": 1
+    },
+    {
+      "img": "./images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Salami",
+      "description": "sos pomidorowy, ser mozzarella, salami",
+      "price": 23.90,
+      "id": 2
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Capriciosa",
+      "description": "sos pomidorowy, ser mozzarella, szynka, pieczarki",
+      "price": 23.90,
+      "id": 3
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Piccante",
+      "description": "sos pomidorowy, ser mozzarella, salami piccante",
+      "price": 23.90,
+      "id": 4
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Roma",
+      "description": "sos pomidorowy, ser mozzarella, salami, pieczarki",
+      "price": 23.90,
+      "id": 5
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Capri",
+      "description": "sos pomidorowy, ser mozzarella, szynka, kukurydza, pieczarki",
+      "price": 25.90,
+      "id": 6
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Diavola",
+      "description": "sos ostry, ser mozzarella, salami piccante, chili, cebula",
+      "price": 25.90,
+      "id": 7
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Spinacci",
+      "description": "sos pomidorowy, ser mozzarella, szpinak, ser feta",
+      "price": 25.90,
+      "id": 8
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Napolitana",
+      "description": "sos pomidorowy, ser mozzarella, salami, pomidor, kukurydza",
+      "price": 25.90,
+      "id": 9
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Americana",
+      "description": "sos pomidorowy, ser mozzarella, boczek, salami, kabanos, mięso mielone",
+      "price": 27.90,
+      "id": 10
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Parma",
+      "description": "sos pomidorowy, ser mozzarella, szynka parmeńska, pomidorki koktajlowe, rukola",
+      "price": 27.90,
+      "id": 11
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Carbonara",
+      "description": "sos śmietanowy, ser mozzarella, boczek, jajko, parmezan",
+      "price": 27.90,
+      "id": 12
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Parma",
+      "description": "sos pomidorowy, ser mozzarella, szynka parmeńska, pomidorki koktajlowe, rukola",
+      "price": 27.90,
+      "id": 13
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Supremo",
+      "description": "sos pomidorowy, ser mozzarella, boczek, kurczak, wołowina, oliwki, papryka, pieczarki",
+      "price": 29.90,
+      "id": 14
+    },
+    {
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "name": "Quattro Formaggi",
+      "description": "sos pomidorowy, ser mozzarella, ser pleśniowy,ser parmezan,ser gorgonzola",
+      "price": 31.90,
+      "id": 15
+    }],
+
+      "toppings": [
+        {
+          "id": 1,
+          "name": "Ser Mozzarella",
+          "price": 5
+        },
+        {
+          "id": 2,
+          "name": "Pieczarki",
+          "price": 5
+        },
+        {
+          "id": 3,
+          "name": "Cebula",
+          "price": 5
+        },
+        {
+          "id": 4,
+          "name": "Chili",
+          "price": 5
+        },
+        {
+          "id": 5,
+          "name": "Papryka",
+          "price": 5
+        },
+        {
+          "id": 6,
+          "name": "Pomidor",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "name": "Kukurydza",
+          "price": 5
+        },
+        {
+          "id": 8,
+          "name": "Szpinak",
+          "price": 5
+        },
+        {
+          "id": 9,
+          "name": "Rukola",
+          "price": 5
+        },
+        {
+          "id": 10,
+          "name": "Salami",
+          "price": 5
+        },
+        {
+          "id": 11,
+          "name": "Salami piccante",
+          "price": 5
+        },
+        {
+          "id": 12,
+          "name": "Boczek",
+          "price": 5
+        },
+        {
+          "id": 13,
+          "name": "Kabanos",
+          "price": 5
+        },
+        {
+          "id": 14,
+          "name": "Mięso mielone",
+          "price": 5
+        },
+        {
+          "id": 15,
+          "name": "Szynka parmeńska",
+          "price": 5
+        }
+      ],
+  "photos": [
+    {
+      "src": "/images/gallery/szef-kuchni-trzymajacy-pyszna-pizze-na-drewnianym-talerzu-w-kuchni-min.jpg",
+      "width": 4,
+      "height": 3,
+      "id": 1
+    },
+    {
+      "src": "/images/gallery/trzej-przyjaciele-razem-jedza-pizze-w-kawiarni-min.jpg",
+      "width": 4,
+      "height": 3,
+      "id": 2
+    },
+    {
+      "src": "/images/gallery/widok-z-boku-kobiety-jedzace-pyszna-pizze-min.jpg",
+      "width": 4,
+      "height": 3,
+      "id": 3
+    },
+    {
+      "src": "/images/gallery/pyszna-pizza-neapolitanska-na-desce-min.jpg",
+      "width": 4,
+      "height": 3,
+      "id": 4
+    },
+    {
+      "src": "/images/gallery/widok-z-boku-makaron-z-sosem-pomidorowym-na-drewnianym-stole-min.jpg",
+      "width": 4,
+      "height": 3,
+      "id": 5
+    },
+    {
+      "src": "/images/gallery/makaron-penne-w-sosie-pomidorowym-z-kurczakiem-i-pomidorami-na-drewnianym-stole-min.jpg",
+      "width": 4,
+      "height": 3,
+      "id": 6
+    },
+    {
+      "src": "/images/gallery/wegetarianskie-makaron-penne-z-pieczarkami-w-bialej-misce-na-drewnianym-stole-weganskie-jedzenie-min.jpg",
+      "width": 4,
+      "height": 3,
+      "id": 7
+    },
+    {
+      "src": "/images/gallery/widok-z-przodu-salatka-grecka-pokrojona-salatka-jarzynowa-z-pomidorami-ogorki-bialy-ser-i-oliwki-wewnatrz-biale-plytki-warzywa-witaminowe-min.jpg",
+      "width": 4,
+      "height": 3,
+      "id": 8
+    },
+    {
+      "src": "/images/gallery/salatka-z-lososiem-i-awokado-na-drewnianym-stole-min.jpg",
+      "width": 4,
+      "height": 3,
+      "id": 9
+    }
+  ]
+}
+

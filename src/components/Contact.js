@@ -7,6 +7,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    //walidacje
     if (!name || !email || !message) {
       alert("Proszę wypełnić wszystkie pola formularza.");
       return;
@@ -15,19 +17,23 @@ const Contact = () => {
       alert("Proszę podać poprawny adres email.");
       return;
     }
-    console.log("Name: ", name);
-    console.log("Email: ", email);
-    console.log("Message: ", message);
-    // Logika API
+    // Zapis do Local Storage
+    const data = { name, email, message };
+    localStorage.setItem("formData", JSON.stringify(data));
+    alert("Twoja wiadomość została pomyślnie wysłana!");
+    // Resetowanie pól formularza
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
     <>
       <section className="contact">
-        <h1>zapraszamy!</h1>
+        <h1>Zapraszamy!</h1>
         <div className="contact__container">
           <div className="map__container">
-            <p className="map__text">Tutaj jesteśmy!!!</p>
+            <p className="map__text">Tutaj jesteśmy:</p>
             <iframe
               className="map__img"
               title="alSalamoMap"

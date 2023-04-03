@@ -26,7 +26,7 @@ const MyGallery = () => {
 
   return (
     <div className="gallery__container">
-      <div className="gallery__text"> Zapraszamy do naszej galerii </div>
+      <div className="gallery__text"></div>
       <Gallery
         photos={photos.map((photo) => ({
           src: photo.src,

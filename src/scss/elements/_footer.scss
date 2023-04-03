@@ -3,7 +3,7 @@
 
   .footer {
     background: linear-gradient(to left, #1e130c, #9a8478);
-    color:white;
+    color:$white;
 
   &__container{
     height:5rem;
@@ -46,7 +46,7 @@
   width: 30px;
   height: 30px;
   margin-left: 10px;
-  color: white;
+  color: $white;
 }
 
 .footer__address {

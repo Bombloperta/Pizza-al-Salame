@@ -18,7 +18,10 @@ const HomeBanner = () => {
             tel: 795456789
           </a>
           <PizzeriaClock />
-          <Link to="/menu" className={"order__link"}>
+          <Link
+            to="/menu"
+            className={"order__link animate__animated animate__bounceIn"}
+          >
             ZAMÓW
           </Link>
         </div>

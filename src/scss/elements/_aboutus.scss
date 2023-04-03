@@ -1,0 +1,12 @@
+.aboutus {
+  max-height: calc(100vh - (5rem + 5rem));
+  overflow: auto;
+  flex-grow: 3;
+  background: linear-gradient(to left, #1e130c, #9a8478);
+  &__description {
+    color:$color-cheese;
+    font-size: 2rem;
+    font-family: 'Allura', cursive;
+    text-align: center;
+  }
+}
