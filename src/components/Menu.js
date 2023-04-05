@@ -13,7 +13,9 @@ const Menu = () => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/pizzas")
+    fetch(
+      "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/pizzas"
+    )
       .then((response) => response.json())
       .then((data) => setPizzas(data))
       .catch((error) => console.error(error));

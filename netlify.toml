@@ -1,5 +1,5 @@
 
 [[redirects]]
-from = "/api/*"
+from = "/api/toppings"
 to = "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/src/data/db.json"
 status = 200
