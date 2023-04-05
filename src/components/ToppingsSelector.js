@@ -6,7 +6,7 @@ const ToppingsSelector = ({ toppingsTotal, setToppingsTotal }) => {
 
   useEffect(() => {
     fetch(
-      "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/api/toppings"
+      "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/toppings"
     )
       .then((response) => response.json())
       .then((data) => {

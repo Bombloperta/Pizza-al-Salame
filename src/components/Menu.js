@@ -14,7 +14,7 @@ const Menu = () => {
 
   useEffect(() => {
     fetch(
-      "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/api/pizzas"
+      "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/pizzas"
     )
       .then((response) => response.json())
       .then((data) => setPizzas(data))
