@@ -1,5 +1,14 @@
-
 [[redirects]]
 from = "/api/toppings"
-to = "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/src/data/db.json"
+to = "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/src/data/db.json/toppings"
+status = 200
+
+[[redirects]]
+from = "/api/pizzas"
+to = "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/src/data/db.json/pizzas"
+status = 200
+
+[[redirects]]
+from = "/api/photos"
+to = "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/src/data/db.json/photos"
 status = 200
