@@ -18,7 +18,7 @@ const MyGallery = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/photos")
+    fetch("http://localhost:3001/photos")
       .then((response) => response.json())
       .then((data) => setPhotos(data))
       .catch((error) => console.error(error));

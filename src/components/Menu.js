@@ -2,11 +2,7 @@ import React, { useEffect, useState } from "react";
 import ToppingsSelector from "./ToppingsSelector";
 import Cart from "./Cart";
 
-const Menu = (
-  {
-    /*setSelectedPizzas*/
-  }
-) => {
+const Menu = () => {
   const [cartModal, setCartModal] = useState(false);
   const [pizzaModal, setPizzaModal] = useState(false);
   const [selectedPizza, setSelectedPizza] = useState(null);
@@ -15,10 +11,9 @@ const Menu = (
   const [toppingsTotal, setToppingsTotal] = useState(0);
   const [pizzas, setPizzas] = useState([]);
   const [cart, setCart] = useState([]);
-  const [toppingsPrice, setToppingsPrice] = useState(0);
 
   useEffect(() => {
-    fetch("http://localhost:3000/pizzas")
+    fetch("http://localhost:3001/pizzas")
       .then((response) => response.json())
       .then((data) => setPizzas(data))
       .catch((error) => console.error(error));
@@ -39,7 +34,6 @@ const Menu = (
       setSelectedCrust("normalne");
       setSelectedToppings([]);
       setToppingsTotal(0);
-      setToppingsPrice(0);
     }
   };
 
@@ -58,7 +52,6 @@ const Menu = (
     setSelectedCrust("normalne");
     setSelectedToppings([]);
     setToppingsTotal(0);
-    setToppingsPrice(0);
   };
 
   const handleShowCartModal = () => {
@@ -103,7 +96,6 @@ const Menu = (
                 toppingsTotal={toppingsTotal}
                 setToppingsTotal={setToppingsTotal}
                 toppings={selectedPizza.toppings}
-                // setSelectedToppings={setSelectedToppings}
               />
             </label>
             <button onClick={handleAddToCart}>Dodaj do koszyka</button>
@@ -113,7 +105,6 @@ const Menu = (
       )}
       <Cart
         toppingsTotal={toppingsTotal}
-        // selectedToppings={selectedToppings}
         cartModal={cartModal}
         handleShowCartModal={handleShowCartModal}
         cart={cart}

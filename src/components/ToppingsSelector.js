@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-const ToppingsSelector = ({
-  toppingsTotal,
-  setToppingsTotal,
-  selectedToppings,
-  // onToppingChange,
-}) => {
+const ToppingsSelector = ({ toppingsTotal, setToppingsTotal }) => {
   const [toppings, setToppings] = useState([]);
   const [toppingCounts, setToppingCounts] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:3000/toppings")
+    fetch("http://localhost:3001/toppings")
       .then((response) => response.json())
       .then((data) => {
         // Dodajemy ceny składników
@@ -37,17 +32,7 @@ const ToppingsSelector = ({
       total += toppingCounts[topping.id] * topping.price;
     });
     setToppingsTotal(total);
-  }, [toppings, toppingCounts]);
-
-  // useEffect(() => {
-  //   // Obliczamy sumę cen składników
-  //   let total = 0;
-  //   toppings.forEach((topping) => {
-  //     total += toppingCounts[topping.id] * topping.price;
-  //   });
-  //   setToppingsTotal(total); // ustawienie sumy składników w kontekście
-  //   setSelectedToppings({ ...toppingCounts }); // ustawienie wybranych składników w nadrzędnym komponencie
-  // }, [toppings, toppingCounts, setSelectedToppings, setToppingsTotal]);
+  }, [toppings, toppingCounts, setToppingsTotal]);
 
   const handleMinusClick = (event, toppingId) => {
     event.preventDefault();

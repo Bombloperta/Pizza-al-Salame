@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <>
       <section className="aboutus">
-        <Carousel />{" "}
+        <Carousel />
         <div className="aboutus__description">
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

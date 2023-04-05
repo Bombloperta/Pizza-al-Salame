@@ -15,20 +15,21 @@ const PizzeriaClock = () => {
     };
   }, []);
 
-  const openingHours = [
-    { day: 0, open: "11:00", close: "23:00" },
-    { day: 1, open: "12:00", close: "20:00" },
-    { day: 2, open: "12:00", close: "19:00" },
-    { day: 3, open: "12:00", close: "22:00" },
-    { day: 4, open: "11:00", close: "22:00" },
-    { day: 5, open: "11:00", close: "23:00" },
-    { day: 6, open: "11:00", close: "23:00" },
-  ];
-
   useEffect(() => {
+    const openingHours = [
+      { day: 0, open: "11:00", close: "23:00" },
+      { day: 1, open: "12:00", close: "20:00" },
+      { day: 2, open: "12:00", close: "19:00" },
+      { day: 3, open: "12:00", close: "22:00" },
+      { day: 4, open: "11:00", close: "22:00" },
+      { day: 5, open: "11:00", close: "23:00" },
+      { day: 6, open: "11:00", close: "23:00" },
+    ];
+
     const todayOpeningHours = openingHours.find(
       (hours) => hours.day === currentTime.getDay()
     );
+
     setTodayOpeningHours(todayOpeningHours);
   }, [currentTime]);
 
