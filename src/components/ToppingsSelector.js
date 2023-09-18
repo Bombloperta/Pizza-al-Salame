@@ -5,9 +5,7 @@ const ToppingsSelector = ({ toppingsTotal, setToppingsTotal }) => {
   const [toppingCounts, setToppingCounts] = useState({});
 
   useEffect(() => {
-    fetch(
-      "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/toppings"
-    )
+    fetch("/data/db.json/toppings")
       .then((response) => response.json())
       .then((data) => {
         // Dodajemy ceny składników

@@ -18,9 +18,7 @@ const MyGallery = () => {
   };
 
   useEffect(() => {
-    fetch(
-      "https://my-json-server.typicode.com/Bombloperta/pizza-al-salame/photos"
-    )
+    fetch("/data/db.json/photos")
       .then((response) => response.json())
       .then((data) => setPhotos(data))
       .catch((error) => console.error(error));
