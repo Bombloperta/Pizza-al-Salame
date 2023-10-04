@@ -13,7 +13,7 @@ const Menu = () => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch("data/db.json") // Zaktualizowana ścieżka URL
+    fetch("/data/db.json")
       .then((response) => response.json())
       .then((data) => setPizzas(data.pizzas)) // Access the "pizzas" property
       .catch((error) => console.error(error));
