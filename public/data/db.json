@@ -1,14 +1,14 @@
 {
   "pizzas": [
     {
-      "img": "./images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
       "name": "Margherita",
       "description": "sos pomidorowy, ser mozzarella",
       "price": 21.90,
       "id": 1
     },
     {
-      "img": "./images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
+      "img": "/images/menu/cienko-pokrojone-pepperoni-to-popularny-dodatek-do-pizzy-w-pizzeriach-w-stylu-amerykanskim-na-bialym-tle-martwa-natura (1).jpg",
       "name": "Salami",
       "description": "sos pomidorowy, ser mozzarella, salami",
       "price": 23.90,

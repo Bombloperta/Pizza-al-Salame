@@ -13,9 +13,9 @@ const Menu = () => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch("/data/db.json")
+    fetch("data/db.json") // Zaktualizowana ścieżka URL
       .then((response) => response.json())
-      .then((data) => setPizzas(data))
+      .then((data) => setPizzas(data.pizzas)) // Access the "pizzas" property
       .catch((error) => console.error(error));
   }, []);
 
@@ -63,15 +63,19 @@ const Menu = () => {
       <h2>Menu</h2>
       <div className="pizzas">
         <div className="pizza-grid">
-          {pizzas.map((pizza) => (
-            <div key={pizza.id} className="pizza">
-              <img src={pizza.img} alt="pizza"></img>
-              <h3>{pizza.name}</h3>
-              <p>{pizza.description}</p>
-              <p>{`${pizza.price.toFixed(2)}zł`}</p>
-              <button onClick={() => handlePizzaClick(pizza)}>Dodaj</button>
-            </div>
-          ))}
+          {Array.isArray(pizzas) ? (
+            pizzas.map((pizza) => (
+              <div key={pizza.id} className="pizza">
+                <img src={pizza.img} alt="pizza"></img>
+                <h3>{pizza.name}</h3>
+                <p>{pizza.description}</p>
+                <p>{`${pizza.price.toFixed(2)}zł`}</p>
+                <button onClick={() => handlePizzaClick(pizza)}>Dodaj</button>
+              </div>
+            ))
+          ) : (
+            <p>Loading pizzas...</p>
+          )}
         </div>
       </div>
       {pizzaModal && (
