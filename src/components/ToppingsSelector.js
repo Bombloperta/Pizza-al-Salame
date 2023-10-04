@@ -5,7 +5,7 @@ const ToppingsSelector = ({ toppingsTotal, setToppingsTotal }) => {
   const [toppingCounts, setToppingCounts] = useState({});
 
   useEffect(() => {
-    fetch("/data/db.json/toppings")
+    fetch("/data/db.json")
       .then((response) => response.json())
       .then((data) => {
         // Dodajemy ceny składników

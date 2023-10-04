@@ -18,9 +18,9 @@ const MyGallery = () => {
   };
 
   useEffect(() => {
-    fetch("/data/db.json/photos")
+    fetch("/data/db.json")
       .then((response) => response.json())
-      .then((data) => setPhotos(data))
+      .then((data) => setPhotos(data.photos))
       .catch((error) => console.error(error));
   }, []);
 
